@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About MyMentor - A comprehensive AI study tool built for students at Mentor Centre with Cambridge notes, AI assistance, and more.">
+    <meta name="keywords" content="about mymentor, study tool, AI learning, mentor centre">
+    <title>About - MyMentor</title>
+    <link rel="icon" type="image/png" href="mymentor.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0f172a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #8b5cf6, #3b82f6, #f97316);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col relative">
+
+    <div class="blob bg-purple-600 w-96 h-96 rounded-full top-0 left-0"></div>
+    <div class="blob bg-orange-500 w-96 h-96 rounded-full bottom-0 right-0"></div>
+
+    <nav class="w-full flex justify-between items-center py-6 px-8 md:px-20 z-50">
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+            <img src="mymentor.png" alt="MyMentor Logo" class="h-16 w-auto object-contain"> 
+            <span class="text-2xl md:text-3xl font-bold tracking-tighter">MY<span class="text-blue-400">MENTOR</span></span>
+        </a>
+        <div class="hidden md:flex gap-8 text-lg font-medium text-gray-300">
+            <a href="about.html" class="hover:text-white transition text-white font-bold border-b-2 border-orange-500">About</a>
+            <a href="features.html" class="hover:text-white transition">Features</a>
+            <a href="blog.html" class="hover:text-white transition">Blog</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow px-6 md:px-20 py-16 z-10">
+        <div class="max-w-4xl mx-auto">
+            
+            <h1 class="text-6xl md:text-7xl font-black mb-4 leading-tight">
+                About <span class="text-gradient">MyMentor</span>
+            </h1>
+            
+            <p class="text-xl text-gray-300 mb-12 max-w-2xl">
+                MyMentor is a revolutionary AI-powered study tool built specifically for students at Mentor Centre. We're transforming how students learn by combining cutting-edge artificial intelligence with comprehensive learning resources.
+            </p>
+
+            <div class="bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-500/30 rounded-2xl p-8 mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+                <p class="text-gray-300 text-lg">
+                    We're not here to do the work for you. We're here to help your brain connect the dots faster. MyMentor empowers students to take control of their learning with intelligent tools, comprehensive resources, and 24/7 AI assistance.
+                </p>
+            </div>
+
+            <h2 class="text-4xl font-bold mb-8">Key Features</h2>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-16">
+                
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-book text-blue-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold">Cambridge Notes</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Comprehensive, well-organized notes aligned with Cambridge curriculum standards. Perfect for revision and understanding core concepts.
+                    </p>
+                </div>
+
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-robot text-purple-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold">AI Companion</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Get instant help with assignments and homework. Our AI companion provides explanations, guidance, and support whenever you need it.
+                    </p>
+                </div>
+
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-layer-group text-orange-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold">Smart Flashcards</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Convert your notes into interactive flashcards instantly. Study smarter with spaced repetition and adaptive learning.
+                    </p>
+                </div>
+
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-lightbulb text-yellow-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold">AI Overlay Panel</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        While reading notes, open our AI panel to ask questions about the specific content. Get contextual help in real-time.
+                    </p>
+                </div>
+
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-compress text-indigo-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold">Automatic Summaries</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Get AI-generated summaries of all your notes. Perfect for quick reviews and understanding key takeaways at a glance.
+                    </p>
+                </div>
+
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-dumbbell text-green-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold">Generated Exercises</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Custom practice problems and exercises generated based on your class materials. Test your knowledge and identify weak areas.
+                    </p>
+                </div>
+
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-users text-pink-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold">Alumni Network</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Connect with alumni and experienced mentors who share their knowledge, insights, and study strategies from their educational journey.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="border-l-4 border-orange-500 pl-8 py-8">
+                <h3 class="text-2xl font-bold mb-4">Built by Students, for Students</h3>
+                <p class="text-gray-300 mb-6 max-w-2xl">
+                    MyMentor was created with deep understanding of student challenges. We've designed every feature to save you time, reduce stress, and help you achieve better grades while truly understanding the material.
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 rounded-full bg-gradient-to-r from-purple-500 to-orange-500 flex items-center justify-center font-bold text-sm">DC</div>
+                    <div>
+                        <p class="font-bold">Donnel Chackwizira</p>
+                        <p class="text-gray-400 text-sm">Founder & CEO</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="w-full text-center py-6 text-gray-500 text-sm font-medium z-10">
+        <div class="flex justify-center gap-6 mb-2">
+            <span>2026 MyMentor Inc.</span>
+            <a href="tos.html" class="hover:text-white transition">ToS</a>
+            <a href="privacy.html" class="hover:text-white transition">Privacy</a>
+        </div>
+    </footer>
+
+</body>
+</html>

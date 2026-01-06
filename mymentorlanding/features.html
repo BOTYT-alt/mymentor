@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Features - MyMentor's powerful tools for enhanced learning and academic success.">
+    <meta name="keywords" content="features, mymentor, study tools, learning features">
+    <title>Features - MyMentor</title>
+    <link rel="icon" type="image/png" href="mymentor.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0f172a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #8b5cf6, #3b82f6, #f97316);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .feature-showcase {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-showcase:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col relative">
+
+    <div class="blob bg-purple-600 w-96 h-96 rounded-full top-0 left-0"></div>
+    <div class="blob bg-orange-500 w-96 h-96 rounded-full bottom-0 right-0"></div>
+
+    <nav class="w-full flex justify-between items-center py-6 px-8 md:px-20 z-50">
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+            <img src="mymentor.png" alt="MyMentor Logo" class="h-16 w-auto object-contain"> 
+            <span class="text-2xl md:text-3xl font-bold tracking-tighter">MY<span class="text-blue-400">MENTOR</span></span>
+        </a>
+        <div class="hidden md:flex gap-8 text-lg font-medium text-gray-300">
+            <a href="about.html" class="hover:text-white transition">About</a>
+            <a href="features.html" class="hover:text-white transition text-white font-bold border-b-2 border-orange-500">Features</a>
+            <a href="blog.html" class="hover:text-white transition">Blog</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow px-6 md:px-20 py-16 z-10">
+        <div class="max-w-5xl mx-auto">
+            
+            <h1 class="text-6xl md:text-7xl font-black mb-4 leading-tight">
+                Powerful <span class="text-gradient">Features</span>
+            </h1>
+            
+            <p class="text-xl text-gray-300 mb-16 max-w-2xl">
+                Everything you need to study smarter, learn faster, and achieve academic excellence.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                
+                <div class="feature-showcase p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="text-2xl font-bold mb-3">Cambridge Notes Library</h3>
+                    <p class="text-gray-400 mb-4">
+                        Access our comprehensive collection of Cambridge-aligned notes covering all major subjects and topics. Organized, clear, and ready for revision.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>✓ Complete syllabus coverage</li>
+                        <li>✓ Well-structured topics</li>
+                        <li>✓ Regular updates</li>
+                    </ul>
+                </div>
+
+                <div class="feature-showcase p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-2xl font-bold mb-3">AI Homework Assistant</h3>
+                    <p class="text-gray-400 mb-4">
+                        Get intelligent help with your assignments. Our AI companion provides step-by-step explanations and guides you toward the correct answer.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>✓ 24/7 availability</li>
+                        <li>✓ Detailed explanations</li>
+                        <li>✓ Learn while getting help</li>
+                    </ul>
+                </div>
+
+                <div class="feature-showcase p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🎴</div>
+                    <h3 class="text-2xl font-bold mb-3">Smart Flashcard Generation</h3>
+                    <p class="text-gray-400 mb-4">
+                        Instantly convert your notes into interactive flashcards. Study with spaced repetition for optimal memory retention.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>✓ One-click conversion</li>
+                        <li>✓ Spaced repetition</li>
+                        <li>✓ Progress tracking</li>
+                    </ul>
+                </div>
+
+                <div class="feature-showcase p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">💡</div>
+                    <h3 class="text-2xl font-bold mb-3">AI Overlay Panel</h3>
+                    <p class="text-gray-400 mb-4">
+                        While reading through your notes, open the AI overlay to ask context-specific questions. Get instant answers without leaving your study material.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>✓ Real-time assistance</li>
+                        <li>✓ Context-aware</li>
+                        <li>✓ Non-disruptive</li>
+                    </ul>
+                </div>
+
+                <div class="feature-showcase p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">📄</div>
+                    <h3 class="text-2xl font-bold mb-3">Automatic Note Summarization</h3>
+                    <p class="text-gray-400 mb-4">
+                        Get AI-powered summaries of all your notes. Perfect for quick reviews before exams or understanding the big picture.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>✓ One-click summaries</li>
+                        <li>✓ Key points highlighted</li>
+                        <li>✓ Save time on revision</li>
+                    </ul>
+                </div>
+
+                <div class="feature-showcase p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🏋️</div>
+                    <h3 class="text-2xl font-bold mb-3">AI-Generated Practice Exercises</h3>
+                    <p class="text-gray-400 mb-4">
+                        Get unlimited practice problems tailored to your class material. Test your knowledge and identify areas needing improvement.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>✓ Unlimited exercises</li>
+                        <li>✓ Instant feedback</li>
+                        <li>✓ Performance analytics</li>
+                    </ul>
+                </div>
+
+                <div class="feature-showcase p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">👥</div>
+                    <h3 class="text-2xl font-bold mb-3">Alumni Knowledge Network</h3>
+                    <p class="text-gray-400 mb-4">
+                        Connect with successful alumni and experienced mentors. Learn from their strategies, insights, and real-world experiences.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>✓ Mentor guidance</li>
+                        <li>✓ Shared strategies</li>
+                        <li>✓ Community support</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-500/20 to-blue-500/20 border border-purple-500/30 rounded-2xl p-10 text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Learning?</h2>
+                <p class="text-gray-300 mb-6">
+                    Download MyMentor today and experience the future of AI-powered education.
+                </p>
+                <a href="index.html#download" class="inline-block bg-blue-600 hover:bg-blue-700 font-bold py-3 px-8 rounded-xl transition">
+                    Get Started Now
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="w-full text-center py-6 text-gray-500 text-sm font-medium z-10">
+        <div class="flex justify-center gap-6 mb-2">
+            <span>2026 MyMentor Inc.</span>
+            <a href="tos.html" class="hover:text-white transition">ToS</a>
+            <a href="privacy.html" class="hover:text-white transition">Privacy</a>
+        </div>
+    </footer>
+
+</body>
+</html>

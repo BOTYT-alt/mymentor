@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyMentor Blog - Articles about AI learning, study tips, and educational insights from our founders and experts.">
+    <meta name="keywords" content="blog, learning tips, study guides, education">
+    <title>Blog - MyMentor</title>
+    <link rel="icon" type="image/png" href="mymentor.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0f172a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #8b5cf6, #3b82f6, #f97316);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .blog-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col relative">
+
+    <div class="blob bg-purple-600 w-96 h-96 rounded-full top-0 left-0"></div>
+    <div class="blob bg-orange-500 w-96 h-96 rounded-full bottom-0 right-0"></div>
+
+    <nav class="w-full flex justify-between items-center py-6 px-8 md:px-20 z-50">
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+            <img src="mymentor.png" alt="MyMentor Logo" class="h-16 w-auto object-contain"> 
+            <span class="text-2xl md:text-3xl font-bold tracking-tighter">MY<span class="text-blue-400">MENTOR</span></span>
+        </a>
+        <div class="hidden md:flex gap-8 text-lg font-medium text-gray-300">
+            <a href="about.html" class="hover:text-white transition">About</a>
+            <a href="features.html" class="hover:text-white transition">Features</a>
+            <a href="blog.html" class="hover:text-white transition text-white font-bold border-b-2 border-orange-500">Blog</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow px-6 md:px-20 py-16 z-10">
+        <div class="max-w-4xl mx-auto">
+            
+            <h1 class="text-6xl md:text-7xl font-black mb-4 leading-tight">
+                Our <span class="text-gradient">Blog</span>
+            </h1>
+            
+            <p class="text-xl text-gray-300 mb-16 max-w-2xl">
+                Insights, tips, and stories about learning, technology, and student success.
+            </p>
+
+            <div class="space-y-8">
+
+                <!-- Blog Post 1 -->
+                <div class="blog-card p-8 rounded-2xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">The Future of AI-Powered Learning</h2>
+                            <div class="flex items-center gap-3 text-gray-400 text-sm">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Donnel Chackwizira</span>
+                                <span>•</span>
+                                <span>January 15, 2026</span>
+                            </div>
+                        </div>
+                        <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm">Featured</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Artificial intelligence is revolutionizing education. We're witnessing a shift from one-size-fits-all learning to personalized, adaptive educational experiences. In this article, we explore how AI is transforming classrooms and why MyMentor is at the forefront of this revolution.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-2">
+                        Read More <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card p-8 rounded-2xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">Mastering Your Cambridge Exams: A Student's Guide</h2>
+                            <div class="flex items-center gap-3 text-gray-400 text-sm">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Ayak Marial</span>
+                                <span>•</span>
+                                <span>January 10, 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Cambridge exams can be intimidating, but with the right preparation strategy, they're entirely manageable. Ayak shares proven techniques for effective note-taking, creating study schedules, and using technology to maximize your exam performance. Learn the secrets that helped countless students achieve top grades.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-2">
+                        Read More <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card p-8 rounded-2xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">How to Use Flashcards for Maximum Retention</h2>
+                            <div class="flex items-center gap-3 text-gray-400 text-sm">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Donnel Chackwizira</span>
+                                <span>•</span>
+                                <span>January 5, 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Flashcards aren't just for memorization—they're powerful learning tools when used correctly. Discover the science behind spaced repetition, active recall, and how MyMentor's smart flashcard system adapts to your learning pace. Learn techniques to transform your revision from passive reading to active learning.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-2">
+                        Read More <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="blog-card p-8 rounded-2xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">Breaking Free from Homework Stress: An AI Perspective</h2>
+                            <div class="flex items-center gap-3 text-gray-400 text-sm">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Ayak Marial</span>
+                                <span>•</span>
+                                <span>December 28, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Homework doesn't have to be stressful. With the right tools and mindset, it becomes an opportunity for deeper learning. Ayak explores how AI assistants can reduce homework anxiety while actually improving understanding. Learn strategies for completing assignments efficiently without sacrificing quality.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-2">
+                        Read More <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="blog-card p-8 rounded-2xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-2">Building a Community of Learners: Why Mentorship Matters</h2>
+                            <div class="flex items-center gap-3 text-gray-400 text-sm">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Donnel Chackwizira</span>
+                                <span>•</span>
+                                <span>December 20, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Learning isn't a solitary journey. At MyMentor, we believe in the power of community and mentorship. In this article, Donnel explains how our alumni network creates a supportive ecosystem where students can learn from experienced mentors, share experiences, and grow together as a community.
+                    </p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center gap-2">
+                        Read More <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="w-full text-center py-6 text-gray-500 text-sm font-medium z-10">
+        <div class="flex justify-center gap-6 mb-2">
+            <span>2026 MyMentor Inc.</span>
+            <a href="tos.html" class="hover:text-white transition">ToS</a>
+            <a href="privacy.html" class="hover:text-white transition">Privacy</a>
+        </div>
+    </footer>
+
+</body>
+</html>

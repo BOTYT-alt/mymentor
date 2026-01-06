@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyMentor - Your AI Study Companion for personalized learning, Cambridge notes, flashcards, and AI-powered homework assistance.">
+    <meta name="keywords" content="study tool, AI learning, homework help, flashcards, student assistant">
+    <meta name="author" content="MyMentor Inc.">
+    <meta property="og:title" content="MyMentor - AI Study Companion">
+    <meta property="og:description" content="Learn Faster, Learn Smarter with AI-powered study assistance">
+    <title>MyMentor - AI Study Companion</title>
+    <link rel="icon" type="image/png" href="mymentor.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom Animations & Gradients */
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0f172a; /* Dark Slate Background */
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* The specific gradient requested: Purple, Blue, Orange */
+        .text-gradient {
+            background: linear-gradient(to right, #8b5cf6, #3b82f6, #f97316);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-gradient-custom {
+            background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+        }
+
+        /* Glassmorphism for the Right Panel */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        /* Floating Animation for Chat Bubbles */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .float-fast { animation: float 4s ease-in-out infinite; }
+        .float-slow { animation: float 6s ease-in-out infinite; }
+
+        /* Button Hover Glow */
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+            transform: scale(1.05);
+        }
+        
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        /* Responsive fixes */
+        @media (max-width: 768px) {
+            .blob {
+                width: 250px !important;
+                height: 250px !important;
+            }
+            
+            h1 {
+                font-size: 3rem !important;
+                line-height: 1.1 !important;
+            }
+            
+            .glass-panel {
+                max-width: 90vw !important;
+                margin: 0 auto !important;
+            }
+        }
+
+        /* Better sizing for larger screens */
+        @media (min-width: 1400px) {
+            main {
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between relative">
+
+    <div class="blob bg-purple-600 w-96 h-96 rounded-full top-0 left-0"></div>
+    <div class="blob bg-orange-500 w-96 h-96 rounded-full bottom-0 right-0"></div>
+
+    <nav class="w-full flex justify-between items-center py-6 px-8 md:px-20 z-50">
+        <div class="flex items-center gap-3">
+            <img src="mymentor.png" alt="MyMentor Logo" class="h-16 w-auto object-contain"> 
+            <span class="text-2xl md:text-3xl font-bold tracking-tighter">MY<span class="text-blue-400">MENTOR</span></span>
+        </div>
+        <div class="hidden md:flex gap-8 text-lg font-medium text-gray-300">
+            <a href="about.html" class="hover:text-white transition">About</a>
+            <a href="features.html" class="hover:text-white transition">Features</a>
+            <a href="blog.html" class="hover:text-white transition text-white font-bold border-b-2 border-orange-500">Blog</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-12 py-10">
+        
+        <div class="md:w-1/2 flex flex-col gap-8 z-10">
+            
+            <h1 class="text-6xl md:text-8xl font-black leading-tight tracking-tight">
+                <span class="text-white">L</span>earn <span class="text-gradient">Faster</span><br>
+                <span class="text-white">L</span>earn <span class="text-gradient">Smarter</span>
+            </h1>
+
+            <div class="flex flex-col gap-4 relative mt-4">
+                <div class="float-slow bg-gray-800 p-4 rounded-2xl rounded-bl-none max-w-md border border-gray-700 shadow-lg">
+                    <p class="text-gray-300 text-sm italic">
+                        "AI is transforming education by personalizing learning. It allows educators to customize lessons and offers data-driven insights."
+                    </p>
+                </div>
+
+                <div class="float-fast self-end bg-blue-600 p-4 rounded-2xl rounded-br-none max-w-md shadow-lg transform translate-x-4">
+                    <p class="text-white text-sm font-medium">
+                        Having your own study partner enhances your learning experience by providing 24/7 support and motivation! 🚀
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 border-l-4 border-orange-500 pl-4">
+                <h3 class="text-2xl font-bold underline decoration-purple-500 underline-offset-4 mb-2">Word from Founders</h3>
+                <p class="text-gray-300 mb-2 max-w-lg">
+                    "We built MyMentor not to do the work for you, but to help your brain connect the dots faster. This is the future of learning—tailored to you, powered by intelligence."
+                </p>
+                <div class="flex items-center gap-2">
+                    <div class="h-8 w-8 rounded-full bg-gradient-to-r from-purple-500 to-orange-500 flex items-center justify-center font-bold text-xs">DC</div>
+                    <span class="font-bold text-white tracking-wide">Donnel Chackwizira</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 w-full flex justify-center z-10">
+            <div class="glass-panel w-full max-w-md p-8 rounded-3xl relative overflow-hidden">
+                <div class="text-center mb-8">
+                    <img src="mymentor.png" alt="Logo" class="h-16 w-auto mx-auto mb-6 opacity-90">
+                    <h2 class="text-3xl font-bold mb-2">Your School's First <br>AI Companion</h2>
+                    <p class="text-gray-400 text-sm">
+                        Seamlessly integrates with your curriculum to generate notes, quizzes, and study plans instantly.
+                    </p>
+                </div>
+
+                <div class="flex flex-col gap-4 mt-8">
+                    <a href="#download-mac" class="btn-glow flex items-center justify-center gap-3 bg-white text-black font-bold py-3 px-6 rounded-xl transition duration-300">
+                        <i class="fab fa-apple text-xl"></i>
+                        <span>Download for Mac</span>
+                    </a>
+                    
+                    <a href="#download-windows" class="btn-glow flex items-center justify-center gap-3 bg-gray-800 border border-gray-600 text-white font-bold py-3 px-6 rounded-xl hover:bg-gray-700 transition duration-300">
+                        <i class="fab fa-windows text-xl text-blue-400"></i>
+                        <span>Download for Windows</span>
+                    </a>
+                </div>
+
+                <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-purple-500 rounded-full blur-3xl opacity-30"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="w-full text-center py-6 text-gray-500 text-sm font-medium">
+        <div class="flex justify-center gap-6 mb-2">
+            <span>2026 MyMentor Inc.</span>
+            <a href="tos.html" class="hover:text-white transition">ToS</a>
+            <a href="privacy.html" class="hover:text-white transition">Privacy</a>
+        </div>
+    </footer>
+
+</body>
+</html>
